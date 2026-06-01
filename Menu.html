@@ -1,0 +1,2909 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+<title> Menu | Pizza Haven </title> 
+
+<meta charset="utf-8"> 
+<meta name="description" content="Pizza Haven, Pizza, NY style pizza"> 
+<meta name="author" content="Cheyenne"> 
+<meta name="keywords" content="Pizza Haven, Pizza, NY style pizza, New york styled pizza"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="refresh" content="10"> 
+
+<link rel="icon" type="image/png" href="images/image.png"> 
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<style> 
+
+*{ 
+margin: 0px; 
+} 
+
+body{ 
+width: 100%; 
+height: 1200px; 
+} 
+
+#space{ 
+width: 5%; 
+height: 100px; 
+} 
+
+nav{ 
+display: flex;
+width: 100%;
+height: 100px;
+background-color: white;
+box-shadow:0 4px 6px 0 rgba(32,33,36,.60);
+position: fixed;
+z-index: 4;
+z-index: 10;
+padding: 0 40px;
+top: 0;
+left: 0;
+} 
+
+.nava{ 
+color: black; 
+font-size: 36px; 
+font-family: 'Bebas Neue', sans-serif; 
+text-decoration: none; 
+position: relative; 
+height: 100px; 
+width: 8%; 
+align-items: center; 
+justify-content: center; 
+text-align: center; 
+display: flex; 
+} 
+
+.nava::after { 
+content: ""; 
+position: absolute; 
+left: 0; 
+bottom: 0; 
+width: 100%; 
+height: 8px; 
+background-color: #9E1C1C;   
+opacity: 0; 
+transition: opacity 0.3s; 
+align-items: center;
+justify-content: center;
+display: flex;
+} 
+
+.nava:hover::after{ 
+opacity: 1; 
+} 
+
+#nava2::after{ 
+content: "";
+position: absolute; 
+left: 0; 
+bottom: 0; 
+width: 100%; 
+height: 8px; 
+background-color: #9E1C1C; 
+opacity: 1;  
+} 
+
+#cart{ 
+font-size: 32px; 
+color: black; 
+height: 100px; 
+width: 5%; 
+align-items: center; 
+justify-content: center; 
+text-align: center; 
+display: flex;
+text-decoration: none; 
+font-family: 'Bebas Neue', sans-serif; 
+} 
+
+#cart:hover{ 
+color: #9E1C1C; 
+transition: 0.2s; 
+font-size: 42px; 
+} 
+
+main{ 
+width: 100%;
+height: 15000px; 
+background-color: #F8F9FA;
+align-items: center; 
+} 
+
+footer{
+height: 100px;
+width: 100%;
+background-color: black;
+display: flex;
+}
+
+#footera{
+height: 100%;
+width: 10%;
+display: flex;
+}
+
+#footera a{
+width: 100%;
+height: 100%;
+margin-left: 2%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.legallinks{
+width: 100%;
+}
+
+.legallinks a{
+color: white;
+width: 25%;
+font-size: 16px;
+font-family: 'Nunito', sans-serif;
+padding: 15px;
+text-decoration: none;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.legallinks a:hover{
+font-size: 18px;
+text-decoration: underline;
+}
+
+.menu{
+height: 14800px;
+width: 75%;
+background-color: white;
+margin-left: 50px;
+margin-top: 100px;
+align-items: center;
+justify-content: center;
+}
+
+.smokeysands{
+height: 1000px;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9{
+margin-top: 20px;
+display: flex;
+}
+
+.container{
+border: solid 2px #9E1C1C;
+border-radius: 5px;
+height: 150px;
+width: 45%;
+margin-left: 25px;
+box-shadow: 1px 3px 4px 1px #80808060;
+background-color: white;
+display: flex;
+cursor: pointer;
+}
+
+.container:hover{
+background-color: #9E1C1C10;
+}
+
+#text{
+width: 64%;
+height: 90%;
+padding: 15px;
+}
+
+#text2{
+width: 100%;
+height: 90%;
+padding: 15px;
+}
+
+#image{
+height: 100%;
+width: 36%;
+border-left: solid 2px #9E1C1C;
+}
+
+#bottom{
+display: flex;
+}
+
+#space2{
+width: 82%;
+height: 20px;
+}
+
+#space3{
+width: 90%;
+height: 20px;
+}
+
+#icon{
+color: #9E1C1C;
+height: 35px;
+width: 35px;
+margin-top: -5px;
+}
+
+.price{
+color: #9E1C1C;
+font-family: 'Akt', sans-serif;
+font-size: 18px;
+}
+
+.price, #icon{
+align-items: center;
+justify-content: center;
+}
+
+#icon:hover{
+color: #EFCB58;
+height: 36px;
+width: 36px;
+}
+
+h1{
+font-family: 'Roboto Slab', sans-serif;
+}
+
+h3{
+font-family: 'Rubik', sans-serif;
+font-size: 18px;
+}
+
+p{
+font-family: 'Nunito', sans-serif;
+font-size: 15px;
+}
+
+#bottom p, #under{
+font-weight: bold;
+}
+
+
+#importanticon{
+color: #9E1C1C;
+}
+
+#sides{
+display: flex;
+width: 100%;
+height: 100%;
+}
+
+#checkout{
+background-color: white;
+width: 20%;
+height: 800px;
+display: flex;
+position: fixed;
+top: 150px;
+right: 0px;
+}
+
+#checkoutbutton{
+width: 80%;
+height: 75px;
+display: flex;
+position: absolute;
+bottom: 25px;
+left: 50px;
+
+}
+
+#buttonc{
+background-color: #808080;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 80%;
+height: 50px;
+border-radius: 5px;
+color: white;
+font-size: 24px;
+}
+
+#buttonc:hover{
+background-color: #80808070;
+cursor: pointer;
+}
+
+</style> 
+
+</head> 
+
+<body> 
+
+<nav> 
+
+<a href="index.html"><img src="images/pizzalogoa.png" alt="Pizza Haven logo" height="100px" width="250px"></a> 
+<div id="space"> </div> 
+<a href="Menu.html" class="nava" id="nava2"> Menu </a> 
+<a href="Gallery.html" class="nava"> Gallery </a> 
+<a href="index.html#contactus" class="nava"> Contact Us </a> 
+<a href="Catering.html" class="nava"> Catering </a> 
+<div style="width: 30%; height: 100px;"> </div> 
+<a href="Menu.html" class="nava"> Order Now </a> 
+<a href="Menu.html" id="cart"><ion-icon name="cart"></ion-icon> 0</a> 
+
+
+</nav> 
+
+<main>
+
+<section id="sides">
+
+<section class="menu">
+
+
+<br><br>
+<br><br>
+
+<div class="smokeysands">
+
+<h1> SMOKEY SANDWICHES </h1>
+<p id="under" style="color: #80808090;"> pecan-smoked, bold flavors, oven cooked. Fresh to go. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Pulled Pork Sandwich </h3>
+<br>
+<p> Tender pulled pork piled high and smothered in our sweet & tangy BBQ sauce, served on a toasted brioche bun. </p>
+<br>
+<div id="bottom">
+<p class="price"> $11.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/porksand.jpeg" alt="pork sandwich" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Smoked Brisket Sandwich </h3>
+<br>
+<p> Melt-in-your-mouth smoked brisket, glazed with sweet & tangy BBQ sauce, stacked on a toasted brioche bun. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/SmokedBrisketSandwich.jpeg" alt="Smoked Brisket Sandwich" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3 style="font-size: 16px;"> Jalapeño Smoked Cheddar Sausage Sandwich </h3>
+<br>
+<p> Spicy jalapeño cheddar sausage, topped with grilled onions, peppers, and served on a hoagie roll OR footlong</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/JalapenoSmoked.jpeg" alt="Jalapeño Smoked Cheddar Sausage Sandwich" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Smoked Chicken Sandwich </h3>
+<br>
+<p> Juicy pecan-smoked chicken drizzled with sweet & tangy BBQ sauce, tucked into a soft brioche bun. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text2">
+
+<h3> Pulled Pork (1/2 lb) </h3>
+<br>
+<p> Dry-rubbed with our secret spice blend and slow-smoked over pecan wood for six hours. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $20.19+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Smoked Chicken (1/2 lb) </h3>
+<br>
+<p> Brined overnight, dry-rubbed with signature spices, and pecan-smoked for 3.5 hours.
+ </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $21.19+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text2">
+
+<h3> Jalapeño Cheddar Sausage (1/2 lb)) </h3>
+<br>
+<p> Scratch-made with beef, pork, Wisconsin cheddar, and chopped pickled jalapeños. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $20.19+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Southern Luv Brisket (1/2 lb) </h3>
+<br>
+<p> Texas-style with a mustard binder, coarse salt, black pepper--smoked low and slow for 12 hours. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $30.39+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row5">
+
+<div class="container">
+<div id="text2">
+
+<h3> BBQ Potato Chips </h3>
+<br>
+<p> Crispy, smokey, and seasoned with bold barbecue flavor. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $2.99 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="Lunch">
+
+<h1> LUNCH SPECIALS </h1>
+<p id="under" style="color: #80808090;"> *Available daily from 11:00 a.m. to 4 p.m.* </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> 2 Slices </h3>
+<br>
+<p> Choose two slices from options like Cheese, Hawaiian, Supreme, Veg, and more. Paired with a variety of drinks including, sodas, water, and iced tea. EXTRA FOR TOPPINGS. </p>
+<br>
+<div id="bottom">
+<p class="price"> $8.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> 2 Beef Patties </h3>
+<br>
+<p> Two beef patties, each topped with a unique topping. Choice of various sodas, sparkling water, malta, or lemonade SF, among other drinks. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $9.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> 2 Potato Knishes </h3>
+<br>
+<p> Two savory potato knishes, served with a choice of drinks including sodas, sparkling water, malta, and icea tea, among others. </p>
+<br>
+<div id="bottom">
+<p class="price"> $9.50 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<br><br>
+
+
+
+<div class="Appetizers">
+
+<h1> APPETIZERS </h1>
+<p style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Mozzarella Sticks </h3>
+<br>
+<p> Crispy golden sticks with flavorful house-made marinara. Available in small (8) or large (16) sizes. </p>
+<br>
+<div id="bottom">
+<p class="price"> $9.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Mozzarella.jpeg" alt="Mozzarella Sticks" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Jalapeño Poppers <ion-icon name="flame-outline" id="importanticon"></ion-icon></h3>
+<br>
+<p> Crispy jalapeño poppers filled with rich creamy cheese, topped with golden panko. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $11.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Poppers.jpeg" alt="JAlapeno Poppers" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="customsalads">
+
+<h1> CUSTOM HOUSE SALADS </h1>
+<p id="under" style="color: #80808090;"> Fresh Home made house Salad serves up to 2 people. ranch dressing on side.</p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> House Salad </h3>
+<br>
+<p> Made with fresh ingredients of lettuce, onions, black olives, mushrooms, tomatoes, cheese and ranch. </p>
+<br>
+<div id="bottom">
+<p class="price"> $10.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Mozzarella.jpeg" alt="Mozzarella Sticks" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="cheesepizza">
+
+<h1> CHEESE PIZZA </h1>
+<p id="under" style="color: #80808090;"> NY style Cheese pizza, add your favorite toppings! </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Small Cheese Pizza </h3>
+<br>
+<p> Customize with options, Al dente, Double-Cut, Extra Sauce, or Extra Cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $12.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/cheesepizza.jpeg" alt="Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Large Cheese Pizza </h3>
+<br>
+<p> Choose your pizza size, crust type, and toppings to create your perfect cheesy masterpiece. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $18.39+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/cheesepizza.jpeg" alt="Pizza" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> X-Large Cheese Pizza </h3>
+<br>
+<p> Customizable options like Al Dente, Double-Cut, Extra Sauce, Hot! Honey Drizzle, and a variety of toppings. </p>
+<br>
+<div id="bottom">
+<p class="price"> $20.69+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/cheesepizza.jpeg" alt="Pizza" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+<div class="smokeypizza">
+
+<h1> SMOKEY PIZZA (NEW) </h1>
+<p id="under" style="color: #80808090;"> Pecan-smoked, bold flavors, oven cooked NY style ,made with home made sauce, fresh cheddar cheese. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Queen City Buffalo Chicken Pizza </h3>
+<br>
+<p> Pecan smoked chicken breast topped with buffalo sauce and fresh cheddar cheese blend. </p>
+<br>
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/queen.jpeg" alt="Queen City Buffalo Chicken Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Messy Pig BBQ Pulled Pork Pizza </h3>
+<br>
+<p> Pecan smoked pork shoulder topped with sweet and tangy BBQ sauce, onions, peppers, and cheddar cheese. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/pig.jpeg" alt="Messy Pig BBQ Pulled Pork Pizza" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3 style="font-size: 16px;"> Smoke Show Pizza </h3>
+<br>
+<p> Scratch-made marinara, 100% all-beef sausage, onions, peppers, and our house made cheese blend.</p>
+<br>
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/SmokePizza.jpeg" alt="Smoke Show Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Texas Q BBQ Smoked Chicken Pizza </h3>
+<br>
+<p> Pecan smoked chicken breast topped with our sweet and tangy BBQ sauce, onions, peppers, and cheddar cheese. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/TexasQBBQ.jpeg" alt="Texas Q BBQ Smoked Chicken Pizza" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text">
+
+<h3 style="font-size: 16px;"> Big Texan BBQ Brisket Pizza </h3>
+<br>
+<p> Pecan smoked brisket topped with sweet and tangy BBQ sauce, onions, peppers, and fresh cheddar cheese blend.</p>
+<br>
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/BigTexasBBQ.jpeg" alt="Big Texan BBQ Brisket Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Smoked Hawaiian Pizza </h3>
+<br>
+<p> Smoked over cooked of smokey ham blended in tangy BBQ sauce, fresh pineapple, marinara sauce, and cheese. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/hawiian.jpeg" alt="Smoked Hawaiian Pizza" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+
+
+
+<div class="special">
+
+<h1> SPECIALTY PIZZA </h1>
+<p id="under" style="color: #80808090;"> NY style. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Hawaiian Special </h3>
+<br>
+<p> Satisfy your cravings with a flavorful blend of ham and pineapple. </p>
+<br>
+<div id="bottom">
+<p class="price"> $16.09+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/hspecial.jpeg" alt="Hawaiian Special" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Supreme "8" </h3>
+<br>
+<p> Combination of pepperoni, sausage, ham, ground beef, onions, black olives, green peppers, and mushrooms. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $22.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/s8.jpeg" alt="Supreme 8" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> Damanator </h3>
+<br>
+<p> Tomato, bacon, onion.</p>
+<br>
+<div id="bottom">
+<p class="price"> $17.24+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/nator.jpeg" alt="Damanator" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Buc Slammer </h3>
+<br>
+<p> Sausage, pepperoni, ham, extra cheese. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $22.25+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Buc.jpeg" alt="Buc Slammer" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text">
+
+<h3> BBQ Chicken Pizza </h3>
+<br>
+<p> BBQ sauce, chicken.</p>
+<br>
+<div id="bottom">
+<p class="price"> $14.94+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/BBQPizza.jpeg" alt="BBQ Chicken Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Vegetarian Pizza <ion-icon name="leaf-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<p> Green peppers, onions, mushrooms, black olives. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $18.39+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/veggie.jpeg" alt="Vegetarian Pizza" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text">
+
+<h3> Paneer Tikka Vegetarian Pizza </h3>
+<br>
+<p> Loaded with paneer (Indian cottage cheese), green peppers, onions, mushrooms, black olives, and cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $17.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Tikka.jpeg" alt="Paneer Tikka Veg. Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Buffalo Chicken Pizza <ion-icon name="flame-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<p> Buffalo sauce, grilled chicken, and ranch dressing (on the side). </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $15.94+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/bcpizza.jpeg" alt="Buffalo Chicken Pizza" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row5">
+
+<div class="container">
+<div id="text">
+
+<h3> Spinach Chicken Alfredo Pizza </h3>
+<br>
+<p> Grilled chicken and spinach combined with delicious Alfredo sauce. Available in Small, Large, or X-Large sizes. </p>
+<br>
+<div id="bottom">
+<p class="price"> $14.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/spinach.jpeg" alt="Spinach Chicken Alfredo Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Meatball Pizza </h3>
+<br>
+<p> Homemade meatball with add-on choice of your toppings. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $15.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/meatball.jpeg" alt="Meatball Pizza" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row6">
+
+<div class="container">
+<div id="text">
+
+<h3> Margherita Pizza </h3>
+<br>
+<p> Fresh tomatoes, fresh basil, ricotta cheese, and choice of your toppings. </p>
+<br>
+<div id="bottom">
+<p class="price"> $15.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/Mpizza.jpeg" alt="Margherita Pizza" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> White Pie </h3>
+<br>
+<p> cheese only. add topping of choice for extra. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $10.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/WhitePie.jpeg" alt="White Pie" height="100%" width="100%">
+</div>
+
+</div>
+
+</div>
+
+<div class="row7">
+
+<div class="container">
+<div id="text">
+
+<h3> Butter Chicken Pizza </h3>
+<br>
+<p> Marinated grilled chicken with special Indian spices butter chicken sauce, onions, and cheese on pizza crust. </p>
+<br>
+<div id="bottom">
+<p class="price"> $16.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/butterch.jpeg" alt="Butter Chicken Pizza" height="100%" width="100%">
+</div>
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="glutenfree">
+
+
+<h1> GLUTEN FREE! CAULIFLOWER CRUST PIZZA </h1>
+<p id="under" style="color: #80808090;"> Gluten Free Cauliflower pizza 12 oz., thin and diabetic friendly. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Gluten Free Cauliflower 12" Pizza
+ </h3>
+<br>
+<p> Cauliflower pizza thin crust 11 oz. can fit gluten-free, diabetes-friendly, low carb, or weight loss diets.  </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/GLfree.jpeg" alt="Gluten Free Cauliflower 12 Pizza" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+<div class="combos">
+
+<h1> COMBO SPECIALS </h1>
+<p id="under" style="color: #80808090;"> Family deal of pizza, wings or garlic knots, and drinks.</p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Singles Special </h3>
+<br>
+<p> Small one-topping pizza with choice of 6 wings or small garlic knots, plus 2 cans of soda. </p>
+<br>
+<div id="bottom">
+<p class="price"> $21.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Hurricane Special </h3>
+<br>
+<p> Extra-large pizza with one topping, 8 wings or small garlic knots, and 4 cans of soda. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $31.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> Gator Special </h3>
+<br>
+<p> 2 large one-topping pizzas with 8 wings or garlic knots and 6 cans of soda. </p>
+<br>
+<div id="bottom">
+<p class="price"> $48.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Sportsman Special </h3>
+<br>
+<p> 2 extra-large one-topping pizzas, 10 wings or small garlic knots, and 8 cans of soda. </p>
+<br>
+<div id="bottom">
+<p class="price"> $54.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text2">
+
+<h3> Half-Time Special </h3>
+<br>
+<p> 2 extra large cheese pizzas and 4 cans of soda. </p>
+<br>
+<div id="bottom">
+<p class="price"> $38.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Seminole Special </h3>
+<br>
+<p> 3 large cheese pizzas, 12 wings or large garlic knots with 8 cans of soda. </p>
+<br>
+<div id="bottom">
+<p class="price"> $64.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text2">
+
+<h3> Bulls Special </h3>
+<br>
+<p> Large pizza with one topping, 6 wings or small garlic knots, and 4 cans of soda (with various options). </p>
+<br>
+<div id="bottom">
+<p class="price"> $28.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="customslices">
+
+<h1> CUSTOM SLICES </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Cheese Slice </h3>
+<br>
+<p> Add toppings for an additional charge each. </p>
+<br>
+<div id="bottom">
+<p class="price"> $4.89+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Buc Slice </h3>
+<br>
+<p> A pizza slice topped with chicken and a blend of cheeses, typically served with a unique sauce. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $6.90 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> Veg Slice <ion-icon name="leaf-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<p> Topped with a variety of fresh vegetables, this pizza slice offers a delightful mix of flavors on a classic crust. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.33 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Hawaiian Slice </h3>
+<br>
+<p> Ham and pineapple, typically nestled atop a crispy crust with a layer of pizza sauce and melted cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.33 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text2">
+
+<h3> All Meat Slice </h3>
+<br>
+<p> An all meat slice typically includes a variety of meats such as pepperoni, ham, sausage, and bacon on a pizza crust. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.90 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Super Hot Slice <ion-icon name="flame-outline" id="importanticon"></ion-icon></h3>
+<br>
+<p> A slice of pizza featuring an intensely spicy sauce, often accompanied by a blend of cheeses. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.33 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text2">
+
+<h3> Damanator Slice </h3>
+<br>
+<p> Sliced chicken with a unique blend of spices and sauces, typically includes a crispy crust or topping. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.33 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> BBQ Chicken Slice </h3>
+<br>
+<p> Smoked chicken, BBQ sauce, and a blend of cheeses on a traditional pizza crust. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.33 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row5">
+
+<div class="container">
+<div id="text2">
+
+<h3> Supreme Slice </h3>
+<br>
+<p> A pizza slice topped with pepperoni, sausage, mushrooms, green peppers, onions, and cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $6.90 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+<div class="garlicknots">
+
+<h1> GARLIC KNOTS </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Garlic Knots (Small) </h3>
+<br>
+<p> This easy garlic knots recipe bakes up so soft & pillowy! Bathed in a flavorsome garlic and herb butter. </p>
+<br>
+<div id="bottom">
+<p class="price"> $8.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/small.jpeg" alt="Garlic Knots (Small)" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Garlic Knots (Large) </h3>
+<br>
+<p> This easy garlic knots recipe bakes up so soft & pillowy! Bathed in a flavorsome garlic and herb butter. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $12.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/small.jpeg" alt="Garlic Knots (Large)" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="breadsticks">
+
+<h1> FLUFFY BREADSTICKS </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Small Breadsticks (7) </h3>
+<br>
+<p> Super soft, buttery garlic breadsticks made from scratch. (Kids' favorite.) </p>
+<br>
+<div id="bottom">
+<p class="price"> $8.99 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/bread.jpeg" alt="Small Breadsticks (7)" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Large Breadsticks (12) </h3>
+<br>
+<p> Super soft, buttery garlic breadsticks made from scratch. (Kids' favorite.) </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $10.99 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/bread.jpeg" alt="Large Breadsticks (12)" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="chicken">
+
+<h1> FRIED / BAKED CHICKEN WINGS </h1>
+<p id="under" style="color: #80808090;"> BAKED WINGS TAKES 15 MINUTES TO COOK. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> 6 Fried/Baked Chicken Wings </h3>
+<br>
+<p> Crispy baked/fried chicken wings with your choice of sauce. </p>
+<br>
+<div id="bottom">
+<p class="price"> $10.99 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/chicken.jpeg" alt="6 Fried/Baked Chicken Wings" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> 12 Fried/Baked Chicken Wings </h3>
+<br>
+<p> Crispy baked/fried chicken wings with your choice of sauce. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $15.99 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/chicken.jpeg" alt="12 Fried/Baked Chicken Wings)" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> 24 Fried/Baked Chicken Wings </h3>
+<br>
+<p> Crispy baked/fried chicken wings with your choice of sauce. </p>
+<br>
+<div id="bottom">
+<p class="price"> $27.99 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/chicken.jpeg" alt="6 Fried/Baked Chicken Wings" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="bonelesswings">
+
+<h1> BONELESS WINGS </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Boneless Wings </h3>
+<br>
+<p> Baked healthy boneless chicken wings with your choice of sauce. </p>
+<br>
+<div id="bottom">
+<p class="price"> $12.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="Jamaican">
+
+<h1> JAMAICAN BEEF PATTIES </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Jamaican Beef Patty </h3>
+<br>
+<p> Beef inside </p>
+<br>
+<div id="bottom">
+<p class="price"> $5.99+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+<div id="image">
+<image src="images/patty.jpeg" alt="Jamacian Beef Patty" height="100%" width="100%">
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="Calzones">
+
+<h1> CALZONES </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Calzone </h3>
+<br>
+<p> Rolled up dough with pizza cheese, ricotta, and choice of one topping. Served with marinara. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.79+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/calzone.jpeg" alt="calzone" height="100%" width="100%">
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<br><br>
+
+<div class="sromboli">
+
+<h1> STROMBOLI </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Stromboli </h3>
+<br>
+<p> Sausage, mushrooms, green peppers, onions, cheese, and inside marinara sauce. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.79+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/stromboli.jpeg" alt="Stromboli" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Spinach Stromboli </h3>
+<br>
+<p> Rolled dough filled with cheese, marinara, spinach, mushroom, onion, and green pepper. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.79+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/spinachs.jpeg" alt="Spinach Stromboli" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="sandwiches">
+
+<h1> SANDWICHES </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Mo-Wich </h3>
+<br>
+<p> Hearty ground beef mixed with sautéed onions, creamy ricotta, melted cheese, and savory sauce stuffed between two slices of bread. Juicy, flavorful and satisfying.</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Meatball Sandwich </h3>
+<br>
+<p> Melty cheese on top of juicy meatballs and tangy marinara sauce on an amoroso roll with garlic butter. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/meatballsand.jpeg" alt="Meatball Sandwich" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> Chicken Parmesan Sandwich </h3>
+<br>
+<p> Savory pizza sauce and melted cheese top a grilled chicken breast. Finished off with Parmesan cheese.</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/chickenparm.jpeg" alt="Chicken Parmesan Sandwich" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Sausage Sandwich </h3>
+<br>
+<p> Garlic butter coated open face bread smothered with Italian sausage and cheese.  </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/sausage.jpeg" alt="Sausage Sandwich" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text">
+
+<h3> Eggplant Parmesan Sandwich </h3>
+<br>
+<p> Crispy fried or baked eggplants layered with ricotta, onions and smothered in pizza sauce.</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/wgg.jpeg" alt="Eggplant Parmesan Sandwich" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Philly Cheese Steak Sandwich </h3>
+<br>
+<p> Garlic butter, open-face Amoroso bread with Philly cheesesteak, green peppers, onions, mushrooms, </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/philly.jpeg" alt="Philly Cheese Steak Sandwich" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text">
+
+<h3> All Meat Sandwich </h3>
+<br>
+<p> Crispy fried or baked eggplants layered with ricotta, onions and smothered in pizza sauce.</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.97+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/all meat.jpeg" alt="All Meat Sandwich" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Tomato Bacon Sandwich </h3>
+<br>
+<p> Hearty sandwich with flavorful bacon, melted cheese, and fresh tomatoes. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.97+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row5">
+
+<div class="container">
+<div id="text">
+
+<h3> Veggie Special Sandwich <ion-icon name="leaf-outline" id="importanticon"></h3>
+<br>
+<p>  with oven-baked mushrooms, onions, green peppers, and black olives, all topped with gooey cheese.</p>
+<br>
+<div id="bottom">
+<p class="price"> $13.97+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/specialveggie.jpeg" alt="Veggie Special Sandwich" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+<div class="meatballplater">
+
+<h1> MEATBALL PLATTER </h1>
+<p id="under" style="color: #80808090;">  </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Meatball Platter </h3>
+<br>
+<p> 2 meatballs in sauce with cheese and garlic bread. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/meatballplatter.jpeg" alt="calzone" height="100%" width="100%">
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="italian">
+
+<h1> ITALIAN GARLIC STRIPS </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Small Italian Garlic Strips </h3>
+<br>
+<p> Topped with melted cheese and sprinkled with parsley. </p>
+<br>
+<div id="bottom">
+<p class="price"> $12.80+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/italian.jpeg" alt="Small Italian Garlic Strips" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Large Italian Garlic Strips </h3>
+<br>
+<p> Topped with melted cheese and sprinkled with parsley. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $17.45+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/italian.jpeg" alt="Large Italian Garlic Strips" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> X-Large Italian Garlic Strips </h3>
+<br>
+<p> Topped with melted cheese and sprinkled with parsley. </p>
+<br>
+<div id="bottom">
+<p class="price"> $19.75+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/italian.jpeg" alt="X-Large Italian Garlic Strips" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="potato">
+
+<h1> POTATO KNISH </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Potato Knish </h3>
+<br>
+<p> NY style, crispy, served with mustard. </p>
+<br>
+<div id="bottom">
+<p class="price"> $4.55 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/potato.jpeg" alt="Potato Knish" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Potato Knish #2 </h3>
+<br>
+<p> New York style. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $8.60 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/potato.jpeg" alt="Potato Knish#2" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text">
+
+<h3> Potato Knish #3 </h3>
+<br>
+<p> Golden-brown pastry filled with seasoned mashed potatoes, offering a savory and satisfying bite. </p>
+<br>
+<div id="bottom">
+<p class="price"> $12.65 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/potato.jpeg" alt="Potato Knish #3 " height="100%" width="100%">
+</div>
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="pizzarolls">
+
+<h1> PIZZA ROLLS </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Pepperoni Roll </h3>
+<br>
+<p> Baked dough filled with pepperoni slices and melted cheese, creating a savory blend of flavors in each bite. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/rolls.jpeg" alt="Potato Knish" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Veggie Roll <ion-icon name="leaf-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<p> Green pepper, onion, mushroom, and black olives. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/rolls.jpeg" alt="Veggie roll" height="100%" width="100%">
+</div>
+
+</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="pasta">
+
+<h1> PASTA/SPAGHETTI </h1>
+<p id="under" style="color: #80808090;"> TELL US : WHAT WOULD YOU PREFER ? PENN PASTA or SPAGHETTI , CHOICE OF SAUCE, MELTED CHEESE , ADD TOPPING FOR EXTRA. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text">
+
+<h3> Custom Pasta/Spaghetti </h3>
+<br>
+<p> Customize your pasta with a variety of toppings. Finish with Italian seasoning and parmesan cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+
+<div id="image">
+<image src="images/pasta.jpeg" alt="Pasta" height="100%" width="100%">
+</div>
+</div>
+
+</div>
+</div>
+
+<br><br>
+
+<div class="pastasalad">
+
+<h1> PASTA SALAD </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Custom Pasta Salad </h3>
+<br>
+<p> Customize your pasta salad with a variety of toppings like pepperoni, sausage, ham, mushrooms, bacon, and more. </p>
+<br>
+<div id="bottom">
+<p class="price"> $13.95+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="Sides">
+
+<h1> SIDES </h1>
+<p id="under" style="color: #80808090;"> The perfect thing to go with your meal! </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Ranch </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Blue Cheese </h3>
+<br>
+<br>
+
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> Small SAuce (Marinara) </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Large Sauce (Marinara) </h3>
+<br>
+<p> Ham and pineapple, typically nestled atop a crispy crust with a layer of pizza sauce and melted cheese. </p>
+<br>
+<div id="bottom">
+<p class="price"> $3.50 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text2">
+
+<h3> Garlic Butter </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.99 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> BBQ Sauce </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text2">
+
+<h3> Hot Sauce <ion-icon name="flame-outline" id="importanticon"></ion-icon></h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Buffalo Sauce <ion-icon name="flame-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row5">
+
+<div class="container">
+<div id="text2">
+
+<h3> Mild Sauce </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.23 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Jalapeños <ion-icon name="flame-outline" id="importanticon"></h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.23 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row6">
+
+<div class="container">
+<div id="text2">
+
+<h3> Banana Peppers </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Pineapple </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.20 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row7">
+
+<div class="container">
+<div id="text2">
+
+<h3> Coco Bread </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $3.10 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text">
+
+<h3> Garlic Bread </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $6.05 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+<div id="image">
+<image src="images/garlicbread.jpeg" alt="Garlic bread" height="100%" width="100%">
+</div>
+</div>
+</div>
+<div class="row8">
+
+<div class="container">
+<div id="text">
+
+<h3> One Meatball (with sauce) </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $4.05 </p>
+<div id="space2"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+<div id="image">
+<image src="images/meatball.jpeg" alt="meatball" height="100%" width="100%">
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Large Dough </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $7.00 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row7">
+
+<div class="container">
+<div id="text2">
+
+<h3> Small Dough </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $3.50 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+
+<div class="desserts">
+
+<h1> DESSERTS </h1>
+<p id="under" style="color: #80808090;"> pecan-smoked, bold flavors, oven cooked. Fresh to go. </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Mega Black & White Cookies </h3>
+<br>
+<p> Warm, gooey chocolate chip cookies with a crisp edge, satisfyingly sweet and decadent. Perfect for sharing or indulging in a comforting treat. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $3.05 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> Blondie Brownies </h3>
+<br>
+<p> Chewy brownies just like grandma makes. Rich, sweet, and oh so satisfying. Perfect dessert to top off your meal. </p>
+<br>
+<div id="bottom">
+<p class="price"> $3.05 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Smoked Chicken Sandwich </h3>
+<br>
+<p> Juicy pecan-smoked chicken drizzled with sweet & tangy BBQ sauce, tucked into a soft brioche bun. </p>
+<br>
+
+<div id="bottom">
+<p class="price"> $13.99+ </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="drinks">
+
+<h1> BEVERAGES </h1>
+<p id="under" style="color: #80808090;"> </p>
+
+<br>
+
+<div class="row1">
+
+<div class="container">
+<div id="text2">
+
+<h3> Canned Soda </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.71 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Bottled Water </h3>
+<br>
+<br>
+
+<div id="bottom">
+<p class="price"> $1.83 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row2">
+
+<div class="container">
+<div id="text2">
+
+<h3> Sparkling Water </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.71 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Sunndy D </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.71 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row3">
+
+<div class="container">
+<div id="text2">
+
+<h3> Kola Champagne </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.71 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Lemonade (sugar free) </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.71 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row4">
+
+<div class="container">
+<div id="text2">
+
+<h3> Malta </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $2.17 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div id="text2">
+
+<h3> Orange Juice <ion-icon name="flame-outline" id="importanticon"></ion-icon> </h3>
+<br>
+<br>
+<div id="bottom">
+<p class="price"> $1.84 </p>
+<div id="space3"></div>
+<a href="#"><ion-icon name="add-circle-outline" id="icon"></ion-icon> </a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section id="checkout">
+
+<p style="font-family: 'Akt', sans-serif; font-size: 24px; position: absolute; top: 25px; left: 80px;"> Your cart is empty </p>
+
+<div id="vertical"></div>
+
+<div id="checkoutbutton">
+
+<button id="buttonc" href="#"> Checkout <div id="space"></div> $0.00 </button>
+
+</div>
+
+</section>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+</main>
+
+<footer>
+
+<div id="footera">
+
+<a href="https://www.facebook.com/people/PIZZA-Haven-NY-Style/61572485884399/#" target="_blank"><img src="images/facebook.png" alt="Facebook logo" width="80px" height="80px"></a>
+<a href="https://www.instagram.com/explore/locations/264036713/pizza-haven/" target="_blank"><img src="images/instagram.png" alt="Instagram logo" width="50px" height="50px"></a>
+
+</div>
+
+<div style="width: 55%;"></div>
+
+<div class="legallinks" style="width: 20%; 
+display: flex;">
+
+<a href="#"><p> Accessibility </p></a>
+<a href="#"><p> Terms </p></a>
+<a href="#"><p> Help </p></a>
+<a href="#"><p> Privacy </p></a>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
